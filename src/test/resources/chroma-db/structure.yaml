@@ -1,0 +1,43 @@
+tenants:
+  - name: tenant891
+    resource_name: someResource
+    databases:
+      - name: database891
+        collections:
+          - name: collection890
+          - name: collection891000
+            metadata:
+              name: metaName
+              access: all
+            configuration:
+              hnsw:
+                space: cosine
+                ef_construction: 200
+                ef_search: 100
+                max_neighbors: 32
+                resize_factor: 1.5
+                sync_threshold: 500
+              embedding_function:
+                type: known
+                name: all-MiniLM-L6-v2
+                config:
+                  model: all-MiniLM-L6-v2
+                  batch_size: 64
+          - name: collection892
+            configuration:
+              hnsw:
+                space: cosine
+                ef_construction: 200
+                ef_search: 100
+                max_neighbors: 32
+                resize_factor: 1.5
+                sync_threshold: 500
+              embedding_function:
+                type: known
+                name: all-MiniLM-L6-v2
+                config:
+                  model: all-MiniLM-L6-v2
+                  batch_size: 64
+      - name: database892
+  - name: tenant892
+    resource_name: someResource

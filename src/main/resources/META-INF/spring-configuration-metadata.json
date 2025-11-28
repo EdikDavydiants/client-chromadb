@@ -1,0 +1,43 @@
+{
+  "groups": [
+    {
+      "name": "spring.chroma-db",
+      "type": "ed.d.chromadbclient.config.chroma.ChromaDbProperties",
+      "description": "ChromaBD configuration properties.",
+      "sourceType": "ed.d.chromadbclient.config.ChromaDbProperties"
+    }
+  ],
+
+  "properties": [
+    {
+      "name": "spring.chroma-db.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Whether to enable ChromaDB integration.",
+      "defaultValue": "false"
+    },
+    {
+      "name": "spring.chroma-db.address",
+      "type": "java.lang.String",
+      "description": "ChromaDB server hostname.",
+      "defaultValue": "localhost"
+    },
+    {
+      "name": "spring.chroma-db.port",
+      "type": "java.lang.String",
+      "description": "ChromaDB server port.",
+      "defaultValue": "8000"
+    },
+    {
+      "name": "spring.chroma-db.api-prefix",
+      "type": "java.lang.String",
+      "description": "ChromaDB API prefix.",
+      "defaultValue": "/api/v2"
+    },
+    {
+      "name": "spring.chroma-db.config-file",
+      "type": "java.lang.String",
+      "description": "Path to YAML configuration file for database structure.",
+      "defaultValue": "chroma-db/structure.yaml"
+    }
+  ]
+}

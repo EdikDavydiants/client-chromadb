@@ -1,0 +1,15 @@
+tenants:
+  - name: tenant1
+    resource_name: someResource
+    databases:
+      - name: db1
+        collections:
+          - name: coll1
+          - name: coll2
+      - name: db2
+        collections:
+          - name: coll1
+      - name: db3
+  - name: tenant2
+    resource_name: someResource
+  - name: tenant3

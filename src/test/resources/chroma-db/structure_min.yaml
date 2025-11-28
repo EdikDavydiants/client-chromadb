@@ -1,0 +1,13 @@
+tenants:
+  - name: tenant81
+    resource_name: someResource
+    databases:
+      - name: database81
+        collections:
+          - name: collection81
+            configuration: null
+          - name: collection82
+            configuration: null
+      - name: database82
+  - name: tenant82
+    resource_name: someResource
